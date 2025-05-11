@@ -1,0 +1,10 @@
+setup.py
+playlist_downloader.egg-info/PKG-INFO
+playlist_downloader.egg-info/SOURCES.txt
+playlist_downloader.egg-info/dependency_links.txt
+playlist_downloader.egg-info/top_level.txt
+playlistdlr/__init__.py
+playlistdlr/app_logger.py
+playlistdlr/app_timer.py
+playlistdlr/config.py
+playlistdlr/main.py

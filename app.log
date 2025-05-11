@@ -1,0 +1,48 @@
+2025-05-12 04:05:44,738 - ERROR - 予期しないエラーが発生しました。エラー: {"error": "module 'playlistdlr.config' has no attribute 'OUTPUT_DIR'", "file": "/Users/nishikawashuhei/nishikawa/30_repos/playlist-downloader/playlistdlr/main.py", "line": 37}
+2025-05-12 04:05:44,739 - ERROR - 処理を中止します。
+2025-05-12 04:07:07,998 - INFO - ダウンロードの準備中...
+2025-05-12 04:07:07,998 - INFO - DL準備: ファイル: `【プロセカ】トラフィック・ジャム ／ 白石杏 & 東雲彰人  ／  2DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=Wj6A1yJTifA`
+2025-05-12 04:07:07,998 - INFO - DL準備: ファイル: `【プロセカ】エゴイスト ／ 白石杏 & 東雲彰人 ／ 3DMV ／ アナザーボーカル ／ 修正後.mp3`, URL: `https://www.youtube.com/watch?v=bhZoZjYQkLk`
+2025-05-12 04:07:07,998 - INFO - DL準備: ファイル: `【プロセカ】絶え間なく藍色 ／東雲彰人 ver ／ 原曲MV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=Bg5pWnAXS9E`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】オルターエゴ ／ 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=26cpM_wjWW4`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】シネマ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=0RKYu1bo8po`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】チルドレンレコード ／ 小豆沢こはね ＆ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=KGz4Z2V4MF8`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】ガランド ／ 東雲彰人 ／ 原曲MV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=_Vrx0m-4uTk`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】フラジール ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=gnJmHVVRfCE`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】威風堂々 ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=-XPa9jKx6t4`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】ミライ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=zl4fsoctbfE`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】夜咄ディセイブ ／ 東雲彰人 ／  原曲MV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=1tT6lw59Z70`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】ECHO ／ 白石杏 & 東雲彰人 ／  2DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=dmHnCs3ch8w`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】RAD DOGS ／ 青柳冬弥 & 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=f7ZFUky0GHo`
+2025-05-12 04:07:07,999 - INFO - DL準備: ファイル: `【プロセカ】月光 ／ 東雲彰人／ 2DMV ／ アナザーボーカル.mp3`, URL: `https://www.youtube.com/watch?v=JbbFvAb_Gjg`
+2025-05-12 04:07:23,615 - INFO - 進捗: 1/14, ファイル: 【プロセカ】トラフィック・ジャム ／ 白石杏 & 東雲彰人  ／  2DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=Wj6A1yJTifA
+2025-05-12 04:07:24,172 - INFO - 進捗: 2/14, ファイル: 【プロセカ】エゴイスト ／ 白石杏 & 東雲彰人 ／ 3DMV ／ アナザーボーカル ／ 修正後.mp3, URL: https://www.youtube.com/watch?v=bhZoZjYQkLk
+2025-05-12 04:07:24,201 - INFO - 進捗: 3/14, ファイル: 【プロセカ】威風堂々 ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=-XPa9jKx6t4
+2025-05-12 04:07:24,228 - INFO - 進捗: 4/14, ファイル: 【プロセカ】オルターエゴ ／ 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=26cpM_wjWW4
+2025-05-12 04:07:26,362 - INFO - 進捗: 5/14, ファイル: 【プロセカ】ECHO ／ 白石杏 & 東雲彰人 ／  2DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=dmHnCs3ch8w
+2025-05-12 04:07:26,613 - INFO - 進捗: 6/14, ファイル: 【プロセカ】シネマ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=0RKYu1bo8po
+2025-05-12 04:07:27,131 - INFO - 進捗: 7/14, ファイル: 【プロセカ】フラジール ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=gnJmHVVRfCE
+2025-05-12 04:07:27,234 - INFO - 進捗: 8/14, ファイル: 【プロセカ】絶え間なく藍色 ／東雲彰人 ver ／ 原曲MV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=Bg5pWnAXS9E
+2025-05-12 04:07:27,782 - INFO - 進捗: 9/14, ファイル: 【プロセカ】ガランド ／ 東雲彰人 ／ 原曲MV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=_Vrx0m-4uTk
+2025-05-12 04:07:27,959 - INFO - 進捗: 10/14, ファイル: 【プロセカ】夜咄ディセイブ ／ 東雲彰人 ／  原曲MV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=1tT6lw59Z70
+2025-05-12 04:07:28,113 - INFO - 進捗: 11/14, ファイル: 【プロセカ】ミライ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=zl4fsoctbfE
+2025-05-12 04:07:28,436 - INFO - 進捗: 12/14, ファイル: 【プロセカ】チルドレンレコード ／ 小豆沢こはね ＆ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=KGz4Z2V4MF8
+2025-05-12 04:07:30,302 - INFO - 進捗: 13/14, ファイル: 【プロセカ】RAD DOGS ／ 青柳冬弥 & 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=f7ZFUky0GHo
+2025-05-12 04:07:30,554 - INFO - 進捗: 14/14, ファイル: 【プロセカ】月光 ／ 東雲彰人／ 2DMV ／ アナザーボーカル.mp3, URL: https://www.youtube.com/watch?v=JbbFvAb_Gjg
+2025-05-12 04:07:30,554 - INFO - ダウンロードが完了しました。実行時間: 23.64秒
+2025-05-12 04:07:36,583 - INFO - ダウンロードの準備中...
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】トラフィック・ジャム ／ 白石杏 & 東雲彰人  ／  2DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】エゴイスト ／ 白石杏 & 東雲彰人 ／ 3DMV ／ アナザーボーカル ／ 修正後.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】絶え間なく藍色 ／東雲彰人 ver ／ 原曲MV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】オルターエゴ ／ 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】シネマ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】チルドレンレコード ／ 小豆沢こはね ＆ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】ガランド ／ 東雲彰人 ／ 原曲MV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】フラジール ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】威風堂々 ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】ミライ ／ 東雲彰人 ／ 3DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】夜咄ディセイブ ／ 東雲彰人 ／  原曲MV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】ECHO ／ 白石杏 & 東雲彰人 ／  2DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,583 - INFO - スキップ: ファイル`【プロセカ】RAD DOGS ／ 青柳冬弥 & 東雲彰人 ／ 2DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,584 - INFO - スキップ: ファイル`【プロセカ】月光 ／ 東雲彰人／ 2DMV ／ アナザーボーカル.mp3`は既に存在します。
+2025-05-12 04:07:36,584 - INFO - ダウンロードが完了しました。実行時間: 1.11秒

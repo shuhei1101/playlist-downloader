@@ -1,7 +1,8 @@
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
-import config
+from playlistdlr import config
+
 
 class AppLogger:
     _instance = None
@@ -15,19 +16,25 @@ class AppLogger:
         if not hasattr(self, "_initialized"):
             self.logger = logging.getLogger("AppLogger")
             self.logger.setLevel(config.APP_LOG_LEVEL)
-            
+
             # StreamHandler
             sh = logging.StreamHandler()
-            sh_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+            sh_formatter = logging.Formatter(
+                "%(asctime)s - %(levelname)s - %(message)s"
+            )
             sh.setFormatter(sh_formatter)
             self.logger.addHandler(sh)
-            
+
             TimedRotatingFileHandler
-            trfh = TimedRotatingFileHandler(config.APP_LOG_PATH, when="midnight", interval=1, backupCount=7)
-            trfh_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+            trfh = TimedRotatingFileHandler(
+                config.APP_LOG_PATH, when="midnight", interval=1, backupCount=7
+            )
+            trfh_formatter = logging.Formatter(
+                "%(asctime)s - %(levelname)s - %(message)s"
+            )
             trfh.setFormatter(trfh_formatter)
             self.logger.addHandler(trfh)
-            
+
             self._initialized = True
 
     def debug(self, message):
