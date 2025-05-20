@@ -25,7 +25,6 @@ class AppLogger:
             sh.setFormatter(sh_formatter)
             self.logger.addHandler(sh)
 
-            TimedRotatingFileHandler
             trfh = TimedRotatingFileHandler(
                 config.APP_LOG_PATH, when="midnight", interval=1, backupCount=7
             )
