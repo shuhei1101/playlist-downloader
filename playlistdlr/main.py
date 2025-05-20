@@ -1,3 +1,5 @@
+#! /Users/nishikawashuhei/nishikawa/30_repos/playlist-downloader/.venv/bin/python
+
 import os
 import asyncio
 
