@@ -1,0 +1,36 @@
+import logging
+import os
+
+
+# ========================== 使用者用設定 ==========================
+# 保存対象のプレイリストやチャンネル（動画タブ）のURLを指定
+TARGET_PAGES = [
+    # "https://www.youtube.com/playlist?list=",
+    # "https://www.youtube.com/playlist?list=",
+    # "https://www.youtube.com/playlist?list=",
+]
+
+# 保存形式（mp4, mp3, all)
+# SAVE_FORMAT = "mp4"
+SAVE_FORMAT = "mp3"
+# SAVE_FORMAT = "all"
+
+
+# youtube api
+# API_KEY = ""
+
+
+# ========================== 開発者用設定 ==========================
+# ---------------- ログ設定 ----------------
+APP_LOG_LEVEL = logging.DEBUG  # アプリケーションのログレベル設定
+# ログディレクトリの作成
+APP_LOG_PATH = os.path.join(os.getenv("LOG_DIR"), "app.log")  # type: ignore
+YT_DLP_LOG_LEVEL = logging.CRITICAL  # yt_dlpのログレベル設定
+
+
+# ---------------- バリデーションチェック ----------------
+# 保存形式の確認
+if SAVE_FORMAT not in ["mp4", "mp3", "all"]:
+    raise ValueError(
+        f"不明な保存形式`{SAVE_FORMAT}`が指定されました。config.pyを確認してください。"
+    )
