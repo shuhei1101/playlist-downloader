@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 playlistdlr/config.py
 .env
+app.log
+
+
