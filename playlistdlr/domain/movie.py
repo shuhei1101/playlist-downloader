@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-from playlistdlr import config
 from util.converter import sanitize_filename
 
 
@@ -13,13 +12,8 @@ class Movie:
     @classmethod
     def from_entry(cls, entry: dict) -> "Movie":
         """yt-dlpのエントリからMovieオブジェクトを生成"""
-        title = sanitize_filename(entry["title"])
-        if config.HAS_UPLOAD_DATE:
-            title = f"{entry['upload_date']}_{title}"
         return cls(
-            id=entry["id"],
-            url=entry["url"],
-            title=title,
+            id=entry["id"], url=entry["url"], title=sanitize_filename(entry["title"])
         )
 
     def is_private(self) -> bool:
