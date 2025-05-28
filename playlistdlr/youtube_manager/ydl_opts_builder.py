@@ -2,8 +2,6 @@ from enum import Enum, auto
 import logging
 import os
 
-from playlistdlr import config
-
 
 class YdlOptsFormat(Enum):
     MP4 = auto()
@@ -45,7 +43,7 @@ class YdlOptsBuilder:
         :param output_dir: 出力先のディレクトリ(デフォルトはos.getenv("OUTPUT_DIR"))
         :param filename: 出力ファイル名のテンプレート(デフォルトは"%(title)s.%(ext)s")
         """
-        self.outtpml = os.path.join(output_dir, filename)
+        self.outtpml = os.path.join(output_dir, filename)  # type: ignore
         return self
 
     def set_output_dir(self, output_dir: str) -> "YdlOptsBuilder":
@@ -82,12 +80,3 @@ class YdlOptsBuilder:
         else:
             raise ValueError("不正なフォーマットです")
         return self
-
-
-# 動作確認
-if __name__ == "__main__":
-    import json
-
-    builder = YdlOptsBuilder().set_outtmpl().set_format()
-
-    print(json.dumps(builder.build(), indent=4))

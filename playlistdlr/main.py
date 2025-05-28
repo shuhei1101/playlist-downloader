@@ -36,7 +36,7 @@ async def main(logger=AppLogger()):
 
         # output配下の空のディレクトリを削除
         OutputDirManager.crean_dir(
-            clean_dir=os.getenv("OUTPUT_DIR"),
+            clean_dir=os.getenv("OUTPUT_DIR"),  # type: ignore
             on_remove_dir=lambda dir_path: logger.debug(
                 f"空のディレクトリ`{os.path.basename(dir_path)}`を削除しました。"
             ),
