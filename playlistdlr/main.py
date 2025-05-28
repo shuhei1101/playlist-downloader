@@ -7,6 +7,7 @@ from playlistdlr import config
 from playlistdlr.app_logger import AppLogger
 from playlistdlr.app_timer import AppTimer
 from playlistdlr.domain.movie import Movie
+from playlistdlr.util.file_manager import has_partial_filename
 from playlistdlr.youtube_manager.output_dir_manager import OutputDirManager
 from playlistdlr.youtube_manager.ydl_opts_builder import YdlOptsBuilder, YdlOptsFormat
 from playlistdlr.youtube_manager.yt_downloader import YtDownloader
@@ -73,8 +74,7 @@ async def main(logger=AppLogger()):
                 if config.SAVE_FORMAT in ["all", "mp4"]:
                     file_name = f"{movie.title}.mp4"
                     file_dir = dir_manager.get_mp4_dir()
-                    file_path = os.path.join(file_dir, file_name)
-                    if os.path.exists(file_path):
+                    if has_partial_filename(dir=file_dir, keyword=file_name):
                         # ファイルが存在する場合はスキップ
                         logger.info(
                             f"スキップ: ファイル`{file_name}`は既に存在します。"
@@ -102,8 +102,7 @@ async def main(logger=AppLogger()):
 
                     file_name = f"{movie.title}.mp3"
                     file_dir = dir_manager.get_mp3_dir()
-                    file_path = os.path.join(file_dir, file_name)
-                    if os.path.exists(file_path):
+                    if has_partial_filename(dir=file_dir, keyword=file_name):
                         # ファイルが存在する場合はスキップ
                         logger.info(
                             f"スキップ: ファイル`{file_name}`は既に存在します。"

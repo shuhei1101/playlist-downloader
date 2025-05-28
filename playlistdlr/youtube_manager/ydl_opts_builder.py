@@ -2,6 +2,8 @@ from enum import Enum, auto
 import logging
 import os
 
+from playlistdlr import config
+
 
 class YdlOptsFormat(Enum):
     MP4 = auto()
@@ -59,6 +61,9 @@ class YdlOptsBuilder:
 
         :param filename: 出力ファイル名のテンプレート
         """
+        if config.HAS_UPLOAD_DATE:
+            # 投稿日を含める場合は%(upload_date)sを追加
+            filename = f"%(upload_date)s_{filename}"
         self.filename = filename
         return self
 

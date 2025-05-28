@@ -1,6 +1,3 @@
-import codecs
-import re
-
 def remove_playlist(yt_url: str) -> str:
     """
     プレイリストのURLを削除する関数
@@ -12,12 +9,12 @@ def remove_playlist(yt_url: str) -> str:
         yt_url = yt_url.split("&list=")[0]
     return yt_url
 
+
 def sanitize_filename(filename: str) -> str:
     # ファイル名に使用できない文字を置換
-    result = filename \
-        .replace("\u3000", " ") \
-        .replace("/", "／")
+    result = filename.replace("\u3000", " ").replace("/", "／")
     return result
+
 
 # 動作確認用
 if __name__ == "__main__":
