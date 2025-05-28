@@ -31,20 +31,3 @@ class YtPlaylistGetter:
                 return Playlist.from_info(info)
         except Exception as e:
             on_error(e)
-
-
-# 動作確認用
-if __name__ == "__main__":
-    import asyncio
-
-    try:
-        playlist = asyncio.run(
-            YtPlaylistGetter().get(
-                playlist_url="https://www.youtube.com/@shimabu_it/videos"
-            )
-        )
-        print("\n".join(playlist.urls))
-        print(f"タイトル: {playlist.title}")
-        print(f"動画数: {len(playlist.urls)}")
-    except ValueError as e:
-        print()
