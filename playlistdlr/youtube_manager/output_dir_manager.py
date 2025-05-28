@@ -31,4 +31,4 @@ class OutputDirManager:
 
     def _get_output_dir(self, dir_name) -> str:
         """出力先のディレクトリを作成して、そのパスを返す"""
-        return os.path.join(os.getenv("OUTPUT_DIR"), dir_name)
+        return os.path.join(os.getenv("OUTPUT_DIR"), dir_name)  # type: ignore
