@@ -56,14 +56,14 @@ class YdlOptsBuilder:
         self.output_dir = output_dir
         return self
 
-    def set_filename(self, filename: str) -> "YdlOptsBuilder":
+    def set_filename(self, filename: str, prefix: str = "") -> "YdlOptsBuilder":
         """出力ファイル名のテンプレートを設定
 
         :param filename: 出力ファイル名のテンプレート
+        :param prefix: ファイル名のプレフィックス文字列
         """
-        if config.HAS_UPLOAD_DATE:
-            # 投稿日を含める場合は%(upload_date)sを追加
-            filename = f"%(upload_date)s_{filename}"
+        if prefix:
+            filename = f"{prefix}_{filename}"
         self.filename = filename
         return self
 

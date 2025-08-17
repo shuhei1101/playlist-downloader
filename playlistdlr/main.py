@@ -62,6 +62,7 @@ async def main(logger=AppLogger()):
             )
 
         tasks = []
+        auto_number_counter = 1  # 連番カウンター
         for playlist in playlists:
             dir_manager = OutputDirManager(dir_name=playlist.title)
 
@@ -70,6 +71,15 @@ async def main(logger=AppLogger()):
                 if movie.is_private():
                     logger.info(f"スキップ: 非公開動画です。url: {movie.url}")
                     continue
+                
+                # プレフィックスを生成
+                prefix = ""
+                if config.PREFIX == "auto-number":
+                    prefix = f"{auto_number_counter:03d}"  # 3桁ゼロパディング
+                    auto_number_counter += 1
+                elif config.PREFIX == "upload-date":
+                    prefix = "%(upload_date)s"
+                
                 # MP4とMP3のダウンロードタスクを作成
                 if config.SAVE_FORMAT in ["all", "mp4"]:
                     file_name = f"{movie.title}.mp4"
@@ -90,7 +100,7 @@ async def main(logger=AppLogger()):
                                 filename=file_name,
                                 builder=YdlOptsBuilder()
                                 .set_output_dir(file_dir)
-                                .set_filename(file_name)
+                                .set_filename(file_name, prefix)
                                 .set_format(YdlOptsFormat.MP4),
                                 on_success=on_success,
                                 on_error=on_error,
@@ -120,7 +130,7 @@ async def main(logger=AppLogger()):
                                 .set_output_dir(
                                     file_dir
                                 )  # .mp3は自動で拡張子を付与してくれるので、タイトルのみを指定
-                                .set_filename(movie.title)
+                                .set_filename(movie.title, prefix)
                                 .set_format(YdlOptsFormat.MP3),
                                 on_success=on_success,
                                 on_error=on_error,
